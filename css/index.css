@@ -1,7 +1,5 @@
 .forside_grid1 {
-  display: grid;
-  grid-template-columns: 2fr, 1fr;
-  grid-template-rows: auto;
+  display: flex;
   margin-left: 2em;
   margin-top: 4em;
 }
@@ -16,6 +14,17 @@
   font-weight: 800;
   margin-bottom: 1.5em;
   font-size: 16px;
+}
+
+.top_part_content {
+  margin-left: 3em;
+}
+
+.josiah_img {
+  width: 30%;
+  margin-right: 2em;
+  margin-left: 8em;
+  border-radius: 5px;
 }
 
 .quote_2 {
@@ -139,14 +148,114 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-items: flex-start;
   gap: 7em; /* luft mellem logoerne */
   width: 40%;
-  margin: 4em auto 6em;
+  margin: 4em auto 1em;
+  margin-bottom: 8em;
 }
 
 .svg {
-  width: 30%;
+  width: 80px; /* vælg den størrelse du vil have */
+  height: 80px;
+  object-fit: contain; /* hele ikonet vises uden at blive beskåret */
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+}
+
+.svg_pictures > div {
+  width: 160px; /* samme bredde for alle */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#aftaler {
+  margin-right: 2em;
+  margin-left: 1em;
+  white-space: nowrap;
+  margin-top: 2em;
+  border-radius: 30px; /* valgfrit, for afrundede kanter */
+  border: 1px solid black;
+  padding: 10px 40px;
+  background-color: #000000; /* black background */
+  color: rgb(255, 255, 255); /* tekst color */
+}
+
+.salg {
+  white-space: nowrap;
+  margin-right: 0.2em;
+  margin-top: 2em;
+  border-radius: 30px; /* valgfrit, for afrundede kanter */
+  border: 1px solid black;
+  padding: 10px 70px;
+  background-color: #000000; /* black background */
+  color: rgb(255, 255, 255); /* tekst color */
+}
+
+.founder {
+  white-space: nowrap;
+  margin-top: 2em;
+  border-radius: 30px; /* valgfrit, for afrundede kanter */
+  border: 1px solid black;
+  padding: 10px 20px;
+  background-color: #000000; /* black background */
+  color: rgb(255, 255, 255); /* tekst color */
+}
+
+.overskrift_med_border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6em; /* luft mellem logoerne */
+  margin: 0 auto 6em;
+  margin-left: 2.5em;
+}
+
+.svg_tekst {
+  text-align: center;
+  font-size: 12px;
+}
+
+/* footer */
+
+.streg_1 {
+  height: 1px; /* tykkelse */
+  width: 50%; /* halvvejs ind på skærmen */
+  background-color: black;
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+.tekst_footer {
+  margin-left: 2em;
+  width: 50%;
+  line-height: 40px;
+  display: flex;
+  font-size: 0.92em;
+}
+
+.footer_content {
+  display: flex;
+  height: 100px;
+}
+
+.logo_footer {
+  margin-left: 8em;
+}
+
+.streg_2 {
+  height: 1px; /* tykkelse */
+  width: 90%; /* halvvejs ind på skærmen */
+  background-color: black;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 4em;
+  margin-top: 4em;
+}
+
+.footer_menu {
+  display: flex;
+  gap: 25px;
+  margin-left: 10em;
 }
