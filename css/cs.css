@@ -1,0 +1,315 @@
+.testimonials {
+  border-radius: 15px; /* valgfrit, for afrundede kanter */
+  border: 1px solid black;
+  width: fit-content;
+  padding: 10px 30px;
+  background-color: #ffffff; /* black background */
+  color: rgb(0, 0, 0); /* tekst color */
+  font-weight: 400;
+  margin-bottom: 1.5em;
+  font-size: 16px;
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.25));
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5em;
+}
+
+#client_case {
+  text-align: center;
+  margin-top: 1em;
+}
+
+/* youtube videos */
+.clientcase-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.boks_1 {
+  width: 80%;
+  max-width: 600px; /* vælg selv */
+  padding: 1.5em;
+  background-color: #ffffff;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px 20px 20px;
+  border-radius: 15px;
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.25));
+  margin-top: 4em;
+  margin-bottom: 4em;
+  grid-column: 1/2;
+  margin-left: 1em;
+}
+
+.yt_tekst1 {
+  font-weight: 800;
+}
+
+.yt_video1 {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: none;
+}
+
+.boks_2 {
+  width: 80%;
+  max-width: 600px; /* vælg selv */
+  padding: 1.5em;
+  background-color: #ffffff;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px 20px 20px;
+  border-radius: 15px;
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.25));
+  margin-top: 4em;
+  margin-bottom: 4em;
+  grid-column: 2/3;
+  margin-left: 1em;
+}
+
+.yt_tekst2 {
+  font-weight: 800;
+}
+
+.yt_video2 {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: none;
+}
+
+.boks_3 {
+  width: 80%;
+  max-width: 600px; /* vælg selv */
+  padding: 1.5em;
+  background-color: #ffffff;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px 20px 20px;
+  border-radius: 15px;
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.25));
+  margin-top: 4em;
+  margin-bottom: 4em;
+  grid-column: 1/2;
+  margin-left: 1em;
+}
+
+.yt_tekst3 {
+  font-weight: 800;
+}
+
+.yt_video3 {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: none;
+}
+
+.boks_4 {
+  width: 80%;
+  max-width: 600px; /* vælg selv */
+  padding: 1.5em;
+  background-color: #ffffff;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px 20px 20px;
+  border-radius: 15px;
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.25));
+  margin-top: 4em;
+  margin-bottom: 4em;
+  grid-column: 2/3;
+  margin-left: 1em;
+}
+
+.yt_tekst4 {
+  font-weight: 800;
+}
+
+.yt_video4 {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: none;
+}
+
+.boks_5 {
+  width: 80%;
+  max-width: 600px; /* vælg selv */
+  padding: 1.5em;
+  background-color: #ffffff;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px 20px 20px;
+  border-radius: 15px;
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.25));
+  margin-top: 4em;
+  margin-bottom: 4em;
+  grid-column: 1/2;
+  margin-left: 1em;
+}
+
+.yt_tekst5 {
+  font-weight: 800;
+}
+
+.yt_video5 {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: none;
+}
+
+.boks_6 {
+  width: 80%;
+  max-width: 600px; /* vælg selv */
+  padding: 1.5em;
+  background-color: #ffffff;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px 20px 20px;
+  border-radius: 15px;
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.25));
+  margin-top: 4em;
+  margin-bottom: 4em;
+  grid-column: 2/3;
+  margin-left: 1em;
+}
+
+.yt_tekst6 {
+  font-weight: 800;
+}
+
+.yt_video6 {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: none;
+}
+
+/* client case section 2 */
+
+.client_h1_2 {
+  margin-top: 4em;
+  margin-left: 1em;
+  font-weight: 500;
+  margin-bottom: 2em;
+}
+
+.clientcase_grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.review1 {
+  grid-column: 1/2;
+  width: 90%;
+  margin-left: 1em;
+}
+
+.review2 {
+  grid-column: 2/3;
+  width: 90%;
+  margin-left: 1em;
+}
+
+.review3 {
+  grid-column: 1/2;
+  width: 90%;
+  margin-left: 1em;
+  margin-top: 3em;
+}
+
+.review4 {
+  grid-column: 2/3;
+  grid-row: 2/4;
+  width: 90%;
+  margin-left: 1em;
+  margin-top: 3em;
+}
+
+.review5 {
+  grid-column: 1/2;
+  width: 90%;
+  margin-left: 1em;
+  margin-top: 4em;
+}
+
+.review6 {
+  grid-column: 2/3;
+  width: 90%;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+.review7 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  width: 90%;
+  margin-left: 1em;
+  margin-top: 2em;
+}
+
+/* footer */
+
+footer {
+  margin-top: 6em;
+  margin-bottom: 4em;
+}
+
+.streg_1 {
+  height: 1px; /* tykkelse */
+  width: 50%; /* halvvejs ind på skærmen */
+  background-color: black;
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+.tekst_footer {
+  margin-left: 2em;
+  width: 50%;
+  line-height: 40px;
+  display: flex;
+  font-size: 0.92em;
+}
+
+.footer_content {
+  display: flex;
+  height: 100px;
+}
+
+.logo_footer {
+  margin-left: 8em;
+}
+
+.streg_2 {
+  height: 1px; /* tykkelse */
+  width: 90%; /* halvvejs ind på skærmen */
+  background-color: black;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 4em;
+  margin-top: 4em;
+}
+
+.footer_menu {
+  display: flex;
+  gap: 25px;
+  margin-left: 10em;
+}
+
+#book_a_call {
+  background-color: #000000; /* black background */
+  color: white; /* tekst color */
+  border-radius: 30px; /* valgfrit, for afrundede kanter */
+  padding: 5px 20px;
+  margin-right: 1.5em;
+  font-size: 14px;
+}
+
+#book_a_call:hover {
+  background-color: rgba(
+    215,
+    190,
+    133,
+    1
+  ); /* eksempel: lilla baggrund ved hover */
+  color: #000000; /* evt. ændre tekstfarve, hvis du vil */
+}
