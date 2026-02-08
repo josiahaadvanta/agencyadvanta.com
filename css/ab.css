@@ -1,0 +1,64 @@
+.grid_ab {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  grid-template-rows: 1fr;
+  margin-right: 2em;
+}
+
+.p1_aboutus {
+  border-radius: 15px; /* valgfrit, for afrundede kanter */
+  border: 1px solid black;
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: #ffffff; /* black background */
+  color: rgb(0, 0, 0); /* tekst color */
+  font-weight: 400;
+  margin-bottom: 1.5em;
+  font-size: 16px;
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.25));
+  display: block;
+  margin-left: 3em;
+  margin-top: 7em;
+}
+
+.h1_ab {
+  margin-left: 1.2em;
+  margin-top: 1.7em;
+  font-size: 40px;
+}
+
+.josiah_img {
+  grid-column: 2/3;
+  grid-row: 1;
+  width: 100%;
+  margin-top: 7em;
+  border-radius: 5px;
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.25));
+}
+
+.p_grid1 {
+  margin-left: 3.2em;
+}
+
+#link_yt {
+  display: block;
+  background-color: #000000; /* black background */
+  color: white; /* tekst color */
+  border-radius: 30px; /* valgfrit, for afrundede kanter */
+  padding: 10px 17px;
+  margin-left: 3.5em;
+  margin-top: 3em;
+  font-size: 14px;
+  width: 30%;
+  font-size: 15px;
+}
+
+#link_yt:hover {
+  background-color: rgba(
+    215,
+    190,
+    133,
+    1
+  ); /* eksempel: lilla baggrund ved hover */
+  color: #000000; /* evt. ændre tekstfarve, hvis du vil */
+}
