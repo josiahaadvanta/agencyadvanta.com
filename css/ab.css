@@ -62,3 +62,58 @@
   ); /* eksempel: lilla baggrund ved hover */
   color: #000000; /* evt. ændre tekstfarve, hvis du vil */
 }
+
+.h1_2 {
+  margin-top: 4em;
+  margin-left: 1em;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.p_2 {
+  margin-left: 3em;
+  font-size: 17px;
+}
+
+/* drop down boks pil */
+summary {
+  list-style: none;
+  display: flex;
+  justify-content: space-between; /* Skubber pilen helt til højre */
+  align-items: center;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  content: "▼";
+  font-size: 0.8rem;
+}
+
+details[open] summary::after {
+  content: "▲";
+}
+
+/* drop down boks styling */
+
+.dropdown {
+  border: 1px solid black;
+  padding: 1em 1em;
+  border-radius: 15px;
+  margin-top: 2em;
+  margin-left: 3em;
+  width: 60%;
+  box-shadow: 0 1px 2px rgb(61, 61, 61);
+}
+
+.p_dropdown {
+  line-height: 30px;
+}
+
+#dropdown_3 {
+  font-size: 15px;
+  margin-left: 3.3em;
+}
