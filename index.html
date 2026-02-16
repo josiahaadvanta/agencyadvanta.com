@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,7 +12,12 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"
+    />
   </head>
+
   <body>
     <nav class="nav_points">
       <a href="index.html" class="logo_button">
@@ -32,7 +37,10 @@
           <a class="menuItem" href="about_us.html">ABOUT US</a>
         </li>
         <li>
-          <a class="menuItem" href="https://calendly.com/" id="book_a_call"
+          <a
+            class="menuItem"
+            href="https://calendly.com/agency-advanta/aa-discovery-call"
+            id="book_a_call"
             >BOOK A CALL</a
           >
         </li>
@@ -113,12 +121,16 @@
       </section>
       ¨
       <section class="forside_del5">
-        <p class="calendly_p">Book a call</p>
-        <img
-          class="calendly"
-          src="img/logo/Logo-advanta_white.webp"
-          alt="logo"
-        />
+        <div
+          class="calendly-inline-widget"
+          data-url="https://calendly.com/agency-advanta/aa-discovery-call"
+          style="min-width: 320px; height: 700px"
+        ></div>
+
+        <script
+          src="https://assets.calendly.com/assets/external/widget.js"
+          async
+        ></script>
       </section>
 
       <section class="forside_del6">
@@ -182,12 +194,33 @@
           <a class="menuItem" href="about_us.html">ABOUT US</a>
         </li>
         <li>
-          <a class="menuItem" href="https://calendly.com/" id="book_a_call"
+          <a
+            class="menuItem"
+            href="https://calendly.com/agency-advanta/aa-discovery-call"
+            id="book_a_call"
             >BOOK A CALL</a
           >
         </li>
       </ul>
     </footer>
     <script src="js/menu.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+    <script>
+      window.cookieconsent.initialise({
+        palette: {
+          popup: { background: "#000" },
+          button: { background: "#fff", text: "#000" },
+        },
+        theme: "classic",
+        position: "bottom",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Accept",
+          link: "Learn more",
+          href: "privacy.html",
+        },
+      });
+    </script>
   </body>
 </html>

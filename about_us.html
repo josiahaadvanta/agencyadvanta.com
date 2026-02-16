@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"
+    />
   </head>
   <body>
     <nav class="nav_points">
@@ -32,7 +36,10 @@
           <a class="menuItem" href="about_us.html">ABOUT US</a>
         </li>
         <li>
-          <a class="menuItem" href="https://calendly.com/" id="book_a_call"
+          <a
+            class="menuItem"
+            href="https://calendly.com/agency-advanta/aa-discovery-call"
+            id="book_a_call"
             >BOOK A CALL</a
           >
         </li>
@@ -106,6 +113,19 @@
           </p>
         </details>
       </section>
+
+      <section class="calendly">
+        <div
+          class="calendly-inline-widget"
+          data-url="https://calendly.com/agency-advanta/aa-discovery-call"
+          style="min-width: 320px; height: 700px"
+        ></div>
+
+        <script
+          src="https://assets.calendly.com/assets/external/widget.js"
+          async
+        ></script>
+      </section>
       <footer class="footer_cs">
         <div class="streg_1"></div>
         <section class="footer_content">
@@ -130,7 +150,10 @@
             <a class="menuItem" href="about_us.html">ABOUT US</a>
           </li>
           <li>
-            <a class="menuItem" href="https://calendly.com/" id="book_a_call"
+            <a
+              class="menuItem"
+              href="https://calendly.com/agency-advanta/aa-discovery-call"
+              id="book_a_call"
               >BOOK A CALL</a
             >
           </li>
@@ -138,5 +161,23 @@
       </footer>
     </main>
     <script src="js/menu.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+    <script>
+      window.cookieconsent.initialise({
+        palette: {
+          popup: { background: "#000" },
+          button: { background: "#fff", text: "#000" },
+        },
+        theme: "classic",
+        position: "bottom",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "OK",
+          link: "Learn more",
+          href: "privacy.html",
+        },
+      });
+    </script>
   </body>
 </html>

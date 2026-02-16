@@ -40,6 +40,10 @@ nav.active .menu {
   z-index: 1000;
 }
 
+button:hover {
+  transform: scale(1.03);
+}
+
 .burger {
   display: flex; /* Flex for at stable linjerne */
   flex-direction: column; /* lodret stabling */
@@ -67,6 +71,10 @@ nav.active .menu {
   width: 20%;
   margin-left: 2em;
   margin-top: 1em;
+}
+
+.calendly-inline-widget {
+  margin-bottom: 12em;
 }
 
 /* footer */
@@ -159,7 +167,8 @@ footer {
     background-color: #000000; /* black background */
     color: white; /* tekst color */
     border-radius: 30px; /* valgfrit, for afrundede kanter */
-    padding: 5px 20px;
+    padding: 10px 20px;
+    font-size: 18px;
   }
   .menu li #book_a_call:hover {
     background-color: rgba(
@@ -172,6 +181,7 @@ footer {
   }
   .menu li :hover {
     color: rgba(215, 190, 133, 1);
+    border: 1px solid rgba(215, 190, 133, 1);
   }
 
   /* navigtion */
