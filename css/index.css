@@ -181,7 +181,7 @@ h4 {
 }
 
 .svg_pictures > div {
-  width: 160px; /* samme bredde for alle */
+  width: 90%; /* samme bredde for alle */
   display: flex;
   flex-direction: column;
   align-items: center;
