@@ -6,7 +6,6 @@
 
 .quote_1 {
   border-radius: 15px; /* valgfrit, for afrundede kanter */
-  border: 1px solid black;
   width: fit-content;
   padding: 10px 20px;
   background-color: #ffffff; /* black background */
@@ -76,7 +75,7 @@ h1 {
 #client_result:hover {
   background-color: rgba(215, 190, 133, 1);
   color: black;
-  border: 1px solid rgba(215, 190, 133, 1);
+  border: 1px solid rgb(0, 0, 0);
 }
 
 .forside_btn {
@@ -266,4 +265,162 @@ h4 {
   display: flex;
   gap: 25px;
   margin-left: 10em;
+}
+
+@media (width>=850px) {
+  #quote1_id {
+    font-size: 20px;
+    padding: 1em;
+    border-radius: 30px;
+    display: inline-block; /* VIGTIG */
+  }
+  .top_part_content {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 2em;
+    text-align: center;
+  }
+
+  .josiah_img {
+    display: none;
+  }
+
+  h1 {
+    font-size: 45px;
+    line-height: 70px;
+  }
+
+  .quote_2 {
+    font-size: 20px;
+    margin-bottom: 2.5em;
+  }
+
+  #client_result {
+    font-size: 20px;
+    padding: 0.3em 1em;
+  }
+
+  #book_a_call {
+    font-size: 20px;
+    padding: 0.3em 1em;
+  }
+
+  /* forside del 2 */
+
+  h2 {
+    font-size: 50px;
+    margin-top: 5em;
+  }
+
+  .quote_3 {
+    font-size: 20px;
+    margin-top: 3em;
+    text-align: center;
+    margin-bottom: 10em;
+  }
+
+  /* forside del 4 */
+
+  h3 {
+    font-size: 25px;
+    font-weight: 450;
+    margin-top: 10em;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+  /* forside del 5 */
+
+  /* forside del 6 */
+  h4 {
+    font-size: 40px;
+    margin-bottom: 2.5em;
+  }
+
+  .svg {
+    width: 110px; /* vælg den størrelse du vil have */
+    height: 110px;
+    object-fit: contain; /* hele ikonet vises uden at blive beskåret */
+    display: block;
+    margin: 0px auto;
+  }
+
+  .svg_pictures {
+    gap: 200px; /* Juster tallet for mere/mindre afstand */
+    margin-bottom: 1em;
+  }
+
+  #aftaler {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .salg {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0.5em 70px;
+  }
+
+  .founder {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .svg_tekst {
+    font-size: 16px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    width: 70%;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 10em;
+  }
+
+  .svg_tekst_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-left: 13em;
+    margin-right: 7em;
+  }
+
+  /* footer */
+
+  .streg_1 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4em;
+  }
+
+  .streg_2 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6em;
+  }
+
+  .tekst_footer {
+    font-size: 26px;
+    font-weight: 350;
+    margin-left: 2.8em;
+  }
+  .logo_footer {
+    display: block; /* vigtigt for centering */
+    margin: 0 auto; /* centrerer logo */
+    width: 200px; /* sæt ønsket størrelse */
+    height: 150px; /* beregnes automatisk */
+    max-width: 100%; /* sikrer at det ikke overskrider container */
+  }
+
+  .footer_menu {
+    list-style: none; /* fjern bullets */
+    display: flex; /* gør listen til flex container */
+    justify-content: center; /* centrer items horisontalt */
+    gap: 2em; /* afstand mellem menupunkterne */
+    padding: 0; /* fjern indbygget padding */
+    margin: 0; /* fjern margin */
+    font-size: 20px;
+    font-weight: 450;
+  }
 }

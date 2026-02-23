@@ -314,3 +314,45 @@ footer {
   ); /* eksempel: lilla baggrund ved hover */
   color: #000000; /* evt. ændre tekstfarve, hvis du vil */
 }
+
+@media (width>=850px) {
+  /* footer */
+
+  .streg_1 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4em;
+  }
+
+  .streg_2 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6em;
+  }
+
+  .tekst_footer {
+    font-size: 26px;
+    font-weight: 350;
+    margin-left: 2.8em;
+  }
+  .logo_footer {
+    display: block; /* vigtigt for centering */
+    margin: 0 auto; /* centrerer logo */
+    width: 200px; /* sæt ønsket størrelse */
+    height: 150px; /* beregnes automatisk */
+    max-width: 100%; /* sikrer at det ikke overskrider container */
+  }
+
+  .footer_menu {
+    list-style: none; /* fjern bullets */
+    display: flex; /* gør listen til flex container */
+    justify-content: center; /* centrer items horisontalt */
+    gap: 2em; /* afstand mellem menupunkterne */
+    padding: 0; /* fjern indbygget padding */
+    margin: 0; /* fjern margin */
+    font-size: 20px;
+    font-weight: 450;
+  }
+}
