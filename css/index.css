@@ -109,6 +109,15 @@ h2 {
   border-radius: 5px;
 }
 
+.video_wrapper {
+  position: relative;
+  width: 70%;
+  max-width: 800px; /* maks bredde på desktop */
+  margin: 0 auto; /* centrerer videoen */
+  border: 1px solid black;
+  margin-top: 5em;
+}
+
 /* forside del 4 */
 
 h3 {
