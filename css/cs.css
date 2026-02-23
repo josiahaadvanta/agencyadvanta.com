@@ -1,6 +1,5 @@
 .testimonials {
-  border-radius: 15px; /* valgfrit, for afrundede kanter */
-  border: 1px solid black;
+  border-radius: 20px; /* valgfrit, for afrundede kanter */
   width: fit-content;
   padding: 10px 30px;
   background-color: #ffffff; /* black background */
@@ -186,10 +185,16 @@
 /* client case section 2 */
 
 .client_h1_2 {
-  margin-top: 4em;
-  margin-left: 1em;
+  margin-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 500;
-  margin-bottom: 3em;
+  margin-bottom: 4em;
+  width: fit-content;
+  border-radius: 15px;
+  padding: 10px 30px;
+  background-color: #ffffff;
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.25));
 }
 
 .clientcase_grid2 {
@@ -317,6 +322,29 @@ footer {
 }
 
 @media (width>=850px) {
+  .testimonials {
+    font-size: 25px;
+    padding: 12px 40px;
+    border-radius: 20px;
+  }
+
+  #client_case {
+    font-size: 45px;
+  }
+
+  .client_h1_2 {
+    margin-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 450;
+    margin-bottom: 4em;
+    width: fit-content;
+    border-radius: 20px;
+    padding: 12px 40px;
+    background-color: #ffffff;
+    filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.25));
+  }
+
   /* footer */
 
   .streg_1 {
@@ -344,6 +372,15 @@ footer {
     width: 200px; /* sæt ønsket størrelse */
     height: 150px; /* beregnes automatisk */
     max-width: 100%; /* sikrer at det ikke overskrider container */
+  }
+
+  #book_a_call {
+    background-color: #000000; /* black background */
+    color: white; /* tekst color */
+    border-radius: 30px; /* valgfrit, for afrundede kanter */
+    padding: 5px 20px;
+    margin-right: 1.5em;
+    font-size: 20px;
   }
 
   .footer_menu {
