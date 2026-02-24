@@ -14,19 +14,12 @@
   margin-bottom: 2.5em;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 3em;
 }
 
 .top_part_content {
   margin-left: 3em;
   text-align: center;
-}
-
-.josiah_img {
-  width: 30%;
-  height: 20%;
-  margin-right: 2em;
-  margin-left: 8em;
-  border-radius: 5px;
 }
 
 .quote_2 {
@@ -270,7 +263,6 @@ h4 {
   margin-left: 3em;
   width: 50%;
   line-height: 40px;
-  display: flex;
   font-size: 0.7em;
 }
 
@@ -280,7 +272,7 @@ h4 {
 }
 
 .logo_footer {
-  margin-left: 8em;
+  margin-left: 3em;
 }
 
 .streg_2 {
@@ -295,8 +287,8 @@ h4 {
 
 .footer_menu {
   display: flex;
+  white-space: nowrap;
   gap: 25px;
-  margin-left: 10em;
 }
 
 @media (width>=850px) {
@@ -311,10 +303,6 @@ h4 {
     margin: 0 auto;
     margin-top: 2em;
     text-align: center;
-  }
-
-  .josiah_img {
-    display: none;
   }
 
   h1 {
