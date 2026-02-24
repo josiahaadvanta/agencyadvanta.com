@@ -1,6 +1,6 @@
 .testimonials {
   border-radius: 20px; /* valgfrit, for afrundede kanter */
-  width: max-content;
+  width: 60%;
   padding: 10px 0px;
   background-color: #ffffff; /* black background */
   color: rgb(0, 0, 0); /* tekst color */
@@ -10,7 +10,7 @@
   filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.25));
   display: block;
   margin-right: auto;
-  margin-left: auto;
+  margin-left: 5em;
   margin-top: 5em;
 }
 
@@ -27,7 +27,7 @@
 
 .boks_1 {
   width: 80%;
-  max-width: 600px; /* vælg selv */
+  width: 80%; /* vælg selv */
   padding: 1.5em;
   background-color: #ffffff;
   border: 1px solid rgb(255, 255, 255);
@@ -52,8 +52,7 @@
 }
 
 .boks_2 {
-  width: 80%;
-  max-width: 600px; /* vælg selv */
+  width: 80%; /* vælg selv */
   padding: 1.5em;
   background-color: #ffffff;
   border: 1px solid rgb(255, 255, 255);
@@ -79,7 +78,7 @@
 
 .boks_3 {
   width: 80%;
-  max-width: 600px; /* vælg selv */
+
   padding: 1.5em;
   background-color: #ffffff;
   border: 1px solid rgb(255, 255, 255);
@@ -105,7 +104,6 @@
 
 .boks_4 {
   width: 80%;
-  max-width: 600px; /* vælg selv */
   padding: 1.5em;
   background-color: #ffffff;
   border: 1px solid rgb(255, 255, 255);
@@ -131,7 +129,6 @@
 
 .boks_5 {
   width: 80%;
-  max-width: 600px; /* vælg selv */
   padding: 1.5em;
   background-color: #ffffff;
   border: 1px solid rgb(255, 255, 255);
@@ -157,7 +154,6 @@
 
 .boks_6 {
   width: 80%;
-  max-width: 600px; /* vælg selv */
   padding: 1.5em;
   background-color: #ffffff;
   border: 1px solid rgb(255, 255, 255);
