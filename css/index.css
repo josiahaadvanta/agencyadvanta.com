@@ -261,6 +261,7 @@ h4 {
 
 .tekst_footer {
   margin-left: 3em;
+  margin-bottom: 2em;
   width: 50%;
   line-height: 40px;
   font-size: 0.7em;
@@ -268,11 +269,11 @@ h4 {
 
 .footer_content {
   display: flex;
-  height: 100px;
 }
 
 .logo_footer {
   margin-left: 3em;
+  height: 2%;
 }
 
 .streg_2 {
@@ -289,6 +290,11 @@ h4 {
   display: flex;
   white-space: nowrap;
   gap: 25px;
+}
+@media (max-width: 768px) {
+  .footer_menu {
+    flex-wrap: wrap; /* må bryde linjen */
+  }
 }
 
 @media (width>=850px) {
