@@ -84,7 +84,8 @@
   font-weight: 500;
   margin-bottom: 4em;
   width: fit-content;
-  font-size: 20px;
+  font-size: 17px;
+  white-space: nowrap;
   border-radius: 15px;
   padding: 10px 30px;
   background-color: #ffffff;
