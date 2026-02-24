@@ -1,6 +1,5 @@
 .p1_aboutus {
   border-radius: 15px; /* valgfrit, for afrundede kanter */
-
   width: fit-content;
   padding: 10px 20px;
   background-color: #ffffff; /* black background */
@@ -135,6 +134,54 @@ details[open] summary::after {
   margin-left: 3.3em;
 }
 
+/* footer */
+
+.streg_1 {
+  height: 1px; /* tykkelse */
+  width: 90%; /* halvvejs ind på skærmen */
+  background-color: black;
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+.tekst_footer {
+  margin-left: 3em;
+  margin-bottom: 2em;
+  width: 50%;
+  line-height: 40px;
+  font-size: 0.7em;
+}
+
+.footer_content {
+  display: flex;
+}
+
+.logo_footer {
+  margin-left: 3em;
+  height: 2%;
+}
+
+.streg_2 {
+  height: 1px; /* tykkelse */
+  width: 90%; /* halvvejs ind på skærmen */
+  background-color: black;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 4em;
+  margin-top: 3em;
+}
+
+.footer_menu {
+  display: flex;
+  white-space: nowrap;
+  gap: 25px;
+}
+@media (max-width: 768px) {
+  .footer_menu {
+    flex-wrap: wrap; /* må bryde linjen */
+  }
+}
+
 @media (width>=850px) {
   .grid_ab {
     display: grid;
@@ -159,8 +206,19 @@ details[open] summary::after {
   }
 
   .h1_ab {
-    margin-left: 2.8em;
     margin-bottom: 1em;
+    text-align: left;
+    margin-left: 2.5em;
+  }
+
+  .p_grid1::before {
+    display: none;
+  }
+
+  .p_grid1 {
+    position: relative;
+    margin-bottom: 0.5em;
+    text-align: left; /* teksten centreres som ønsket */
   }
 
   .josiah_img {
