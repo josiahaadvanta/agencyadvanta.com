@@ -472,7 +472,12 @@ h4 {
     font-weight: 450;
   }
 }
-
+.divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #ccc, transparent);
+  margin: 40px 0;
+}
 @media (max-width: 768px) {
   .svg_tekst_grid {
     display: none;
