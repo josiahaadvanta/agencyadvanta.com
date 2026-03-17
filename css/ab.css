@@ -253,7 +253,7 @@ details[open] summary::after {
   .grid2_ab {
     margin-left: 4em;
     margin-bottom: 10em;
-    margin-top: 17em;
+    /* margin-top: 17em; */
   }
 
   /* footer */
@@ -286,12 +286,26 @@ details[open] summary::after {
   }
 
   #book_a_call {
+    background-color: #febd14; /* black background */
+    color: black; /* tekst color */
+    border-radius: 30px; /* valgfrit, for afrundede kanter */
+    padding: 5px 20px;
+    margin-right: 1.5em;
+    font-family: 'Satoshi-Bold', 'Satoshi Placeholder', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+  }
+
+  #book_a_call3 {
     background-color: #000000; /* black background */
     color: white; /* tekst color */
     border-radius: 30px; /* valgfrit, for afrundede kanter */
     padding: 5px 20px;
     margin-right: 1.5em;
     font-size: 20px;
+    cursor: pointer;
   }
 
   .footer_menu {

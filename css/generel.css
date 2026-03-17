@@ -1,6 +1,10 @@
 body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   background-color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Satoshi-Regular', 'Satoshi Placeholder', sans-serif;
+  font-weight: 400;
   color: black;
 }
 
@@ -21,9 +25,15 @@ li {
   display: flex;
   justify-content: space-between; /* logo til venstre, menu/burger til højre */
   align-items: center; /* vigtig: vertikalt centreret på samme linje */
-  padding: 10px 20px;
   background-color: #fff;
   flex-wrap: nowrap; /* sikrer, at børn ikke rykkes ned */
+  width: 100%;
+  border-bottom-width: 3px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #ffcc00;
+  border-style: solid;
 }
 
 nav.active .menu {
@@ -71,6 +81,36 @@ button:hover {
   width: 20%;
   margin-left: 2em;
   margin-top: 1em;
+}
+
+.logo_button {
+  display: flex;
+  justify-content: flex-end; /* aligns content to the right */
+  align-items: center;       /* vertical center */
+  width: 40%;               /* make it span the container */
+  text-decoration: none;     /* optional, remove underline */
+}
+
+/* client */
+
+.client {
+  border-style: solid;
+  padding: 50px 50px;
+  margin-top: 70px;
+  margin-left: 50px;
+  margin-right: 50px; 
+  margin-bottom: 50px;
+  border-radius: 10px;
+  border-color: #ffcc00;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+    url("../img/header-bg2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.client h3 {
+  margin: 0;
 }
 
 .calendly-inline-widget {
@@ -132,7 +172,7 @@ footer {
 }
 
 #book_a_call {
-  background-color: #000000; /* black background */
+  background-color: #fff; /* black background */
   color: white; /* tekst color */
   border-radius: 30px; /* valgfrit, for afrundede kanter */
   padding: 5px 20px;
@@ -150,21 +190,213 @@ footer {
   color: #000000; /* evt. ændre tekstfarve, hvis du vil */
 }
 
+#book_a_call2 {
+  background-color: #000000; /* black background */
+  color: white; /* tekst color */
+  border-radius: 15px; /* valgfrit, for afrundede kanter */
+  padding: 5px 20px;
+  margin-right: 1.5em;
+  font-size: 14px;
+  border-width: 2.5px;
+  border-color: #ffcc00;
+  border-style: solid;
+}
+
+#book_a_call2:hover {
+  background-color: rgba(
+    215,
+    190,
+    133,
+    1
+  ); /* eksempel: lilla baggrund ved hover */
+  color: #000000; /* evt. ændre tekstfarve, hvis du vil */
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  gap: 10px;              /* space between divs */
+}
+
+.box {
+  margin: 50px;
+  width: 50%;
+  height: 100%;
+  border-width: 2.5px;
+  border-color: #ffcc00;
+  border-style: solid;
+  border-radius: 15px; /* valgfrit, for afrundede kanter */
+  padding-left: 20px;
+}
+
+.box h2 {
+  margin: 0; /* remove default margins */
+  text-align: left;
+}
+
+.lazy {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.lazy-loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+  /* Modal background */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+}
+
+/* Modal box */
+.modal-content {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  margin: 5% auto;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Close button */
+#closeModal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Iframe */
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* 2nd modal */
+
+/* Modal background */
+.modal2 {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+}
+
+/* Modal box */
+.modal-content2 {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  margin: 5% auto;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Close button */
+#closeModal2 {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Iframe */
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* 3rd modal */
+
+/* Modal background */
+.modal3 {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+}
+
+/* Modal box */
+.modal-content3 {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  margin: 5% auto;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Close button */
+#closeModal3 {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Iframe */
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 @media (width>=850px) {
   .menu {
     display: flex;
-    gap: 40px;
+    width: 70%;
+    gap: 80px;
+  }
+
+  .logo_button {
+    display: flex;
+    justify-content: flex-end; /* aligns content to the right */
+    align-items: center;       /* vertical center */
+    width: 40%;               /* make it span the container */
+    text-decoration: none;     /* optional, remove underline */
   }
 
   .nav_points {
     display: flex; /* Flex container */
     justify-content: space-between; /* logo til venstre, menu + burger til højre */
     align-items: center; /* vertikal centering */
-    padding: 10px 20px;
     background-color: #fff; /* valgfri baggrund */
-    position: relative;
     font-size: 1.2em;
     margin-right: 2em;
+    width: 100%;
+    border-bottom-width: 3px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-color: #ffcc00;
+    border-style: solid;
   }
 
   /* hover effekt på nav */
@@ -185,6 +417,26 @@ footer {
     ); /* eksempel: lilla baggrund ved hover */
     color: #000000; /* evt. ændre tekstfarve, hvis du vil */
   }
+  .menu li #book_a_call2 {
+    background-color: #000000; /* black background */
+    color: white; /* tekst color */
+    border-radius: 15px; /* valgfrit, for afrundede kanter */
+    padding: 10px 20px;
+    font-size: 18px;
+    border-width: 2.5px;
+    border-color: #ffcc00;
+    border-style: solid;
+  }
+  .menu li #book_a_call2:hover {
+    background-color: rgba(
+      215,
+      190,
+      133,
+      1
+    ); /* eksempel: lilla baggrund ved hover */
+    color: #000000; /* evt. ændre tekstfarve, hvis du vil */
+    cursor: pointer;
+  }
   .menu li :hover {
     color: rgba(215, 190, 133, 1);
   }
@@ -199,7 +451,7 @@ footer {
 
   /* font */
   .roboto-medium {
-    font-family: "Roboto", sans-serif;
+    font-family: "Satoshi", "Satoshi Placeholder", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500; /* Medium */
     font-style: normal;
@@ -248,5 +500,129 @@ footer {
     margin: 0; /* fjern margin */
     font-size: 20px;
     font-weight: 450;
+  }
+
+    /* Modal background */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+  }
+
+  /* Modal box */
+  .modal-content {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    margin: 5% auto;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  /* Close button */
+  #closeModal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  /* Iframe */
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  /* 2nd modal */
+
+  /* Modal background */
+  .modal2 {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+  }
+
+  /* Modal box */
+  .modal-content2 {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    margin: 5% auto;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  /* Close button */
+  #closeModal2 {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  /* Iframe */
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  /* 3rd modal */
+
+  /* Modal background */
+  .modal3 {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+  }
+
+  /* Modal box */
+  .modal-content3 {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    margin: 5% auto;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  /* Close button */
+  #closeModal3 {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  /* Iframe */
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
   }
 }
