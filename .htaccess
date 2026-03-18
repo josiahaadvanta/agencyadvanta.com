@@ -1,0 +1,36 @@
+############################################
+# Disable Bluehost Endurance / LiteSpeed Cache
+############################################
+<IfModule Litespeed>
+    CacheDisable public /
+</IfModule>
+
+<IfModule mod_endurance_page_cache.c>
+    EndurancePageCache Off
+</IfModule>
+
+############################################
+# Force fresh index.html on every request
+############################################
+<Files "index.html">
+  <IfModule mod_headers.c>
+    Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+  </IfModule>
+</Files>
+
+############################################
+# React SPA Routing
+############################################
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # If it's not a real file or directory, route to index.html
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
+
